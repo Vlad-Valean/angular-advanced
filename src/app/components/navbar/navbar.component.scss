@@ -1,0 +1,24 @@
+a, li, ul {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.links {
+  display: inline-block;
+  background-color: rgb(123, 34, 123);
+  backdrop-filter: blur(5px);
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 125px;
+  border-radius: 12.5px;
+  transition: ease-in-out 0.2s;
+  text-align: center;
+
+  &:hover {
+    box-shadow: 0 0 15px rgba(33,33,33,.4);
+    cursor: pointer;
+  }
+}
+
+

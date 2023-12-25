@@ -1,7 +1,12 @@
-<div>
-  <ul>
+<div class="d-flex flex-row justify-content-between align-items-center p-3 base-container mb-5">
+  <div class="d-flex flex-row justify-content-start align-items-center w-50">
+    <a [routerLink]="'/'">
+      <img src="favicon.ico" alt=""/>
+    </a>
+  </div>
+  <ul class="d-flex flex-row justify-content-around align-items-center w-50">
     <li *ngFor="let link of links">
-      <a [routerLink]="link.path">{{ link.name }}</a>
+      <a class="links" [routerLink]="link.path">{{ link.name }}</a>
     </li>
   </ul>
 </div>
