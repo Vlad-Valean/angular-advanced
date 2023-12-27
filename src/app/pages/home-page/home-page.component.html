@@ -1,3 +1,6 @@
 <div class="base-container flex-column justify-content-center align-items-start text-center">
-  <h1>Home!</h1>
+  <h1 class="text-center pb-5">Home!</h1>
+  <div class="d-flex flex-row flex-wrap justify-content-around align-items-center">
+    <app-card *ngFor="let card of cards" [card]="card"></app-card>
+  </div>
 </div>
